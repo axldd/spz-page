@@ -1,0 +1,31 @@
+---
+import { SITE } from '../data/site';
+interface Props {
+  title?: string;
+}
+const { title = 'Termin vereinbaren' } = Astro.props;
+---
+
+<aside class="rounded border border-line bg-paper p-6">
+  <p class="text-lg font-semibold">{title}</p>
+  <p class="mt-1 text-sm text-ink-mute">{SITE.longName}</p>
+  <dl class="mt-5 space-y-3 text-[0.95rem]">
+    <div>
+      <dt class="text-xs font-semibold tracking-wider text-ink-mute uppercase">Telefon</dt>
+      <dd><a class="font-semibold text-brand-dark hover:text-brand-darker" href={SITE.phone.href}>{SITE.phone.label}</a></dd>
+    </div>
+    <div>
+      <dt class="text-xs font-semibold tracking-wider text-ink-mute uppercase">Sekretariat von Schumann</dt>
+      <dd><a class="font-semibold text-brand-dark hover:text-brand-darker" href={SITE.phoneSecretary.href}>{SITE.phoneSecretary.label}</a></dd>
+    </div>
+    <div>
+      <dt class="text-xs font-semibold tracking-wider text-ink-mute uppercase">E-Mail</dt>
+      <dd><a class="font-semibold break-all text-brand-dark hover:text-brand-darker" href={`mailto:${SITE.email}`}>{SITE.email}</a></dd>
+    </div>
+    <div>
+      <dt class="text-xs font-semibold tracking-wider text-ink-mute uppercase">Adresse</dt>
+      <dd>{SITE.street}, {SITE.city}</dd>
+    </div>
+  </dl>
+  <a href="/kontakt/" class="mt-6 inline-block text-sm font-semibold text-brand-dark hover:text-brand-darker">Anfahrt &amp; Kontakt →</a>
+</aside>

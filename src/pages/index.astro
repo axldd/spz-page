@@ -1,0 +1,111 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import LawyerCard from '../components/LawyerCard.astro';
+import { SITE } from '../data/site';
+import bookcase from '../assets/bookcase.jpg';
+
+const anwaelte = (await getCollection('anwaelte')).sort((a, b) => a.data.order - b.data.order);
+const seiten = await getCollection('seiten');
+const familyTopics = seiten.filter((e) => e.data.parent === 'familienrecht').sort((a, b) => a.data.order - b.data.order);
+
+/*
+ * The old WordPress site used plain permalinks (/?page_id=13). Those links all
+ * land on the start page of a static site, so forward them to the new path.
+ */
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const legacy: Record<number, string> = { 12: '/' };
+for (const e of seiten) if (e.data.wpId && e.data.slug !== 'datenschutz') legacy[e.data.wpId] = `/${e.data.slug}/`;
+for (const e of anwaelte) if (e.data.wpId) legacy[e.data.wpId] = `/rechtsanwaelte/${e.data.slug}/`;
+legacy[15] = '/rechtsanwaelte/';
+legacy[30] = '/rechtsgebiete/';
+legacy[24] = '/kontakt/';
+const redirect = `(function(){var m=location.search.match(/[?&](?:page_id|p)=(\\d+)/);var t=m&&${JSON.stringify(legacy)}[m[1]];if(t&&t!=="/")location.replace(${JSON.stringify(base)}+t);})();`;
+---
+
+<Base title={SITE.name}>
+  <script is:inline slot="head" set:html={redirect} />
+
+  <section class="relative isolate overflow-hidden bg-ink">
+    <Image
+      src={bookcase}
+      alt=""
+      width={2200}
+      widths={[800, 1400, 2200]}
+      sizes="100vw"
+      loading="eager"
+      fetchpriority="high"
+      class="absolute inset-0 -z-10 h-full w-full object-cover opacity-30"
+    />
+    <div class="container-page py-20 text-white md:py-32">
+      <span class="mb-6 block h-1 w-16 bg-brand" aria-hidden="true"></span>
+      <h1 class="max-w-3xl text-4xl leading-tight font-bold tracking-tight md:text-6xl">{SITE.name}</h1>
+      <p class="mt-4 max-w-2xl text-xl text-white/85 md:text-2xl">{SITE.tagline} in Rüsselsheim</p>
+      <div class="mt-10 flex flex-wrap gap-3">
+        <a href="/kontakt/" class="rounded bg-brand px-6 py-3 font-semibold text-ink transition-colors hover:bg-white">Kontakt aufnehmen</a>
+        <a href="/rechtsgebiete/" class="rounded border border-white/40 px-6 py-3 font-semibold text-white transition-colors hover:border-white hover:bg-white/10">Rechtsgebiete</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-page grid gap-10 py-16 md:grid-cols-[1fr_1.3fr] md:py-24">
+    <h2 class="text-3xl leading-tight font-bold tracking-tight">Willkommen auf unserer Homepage!</h2>
+    <div class="text-lg leading-relaxed text-ink-soft">
+      <p>
+        Wir freuen uns, Ihnen auf dieser Webseite unsere Kanzlei vorstellen zu können. Wenn Sie eine Rechtsanwaltskanzlei suchen, die über langjährige Erfahrungen im Bereich des Familienrechts und im Zivil-, insbesondere Straßenverkehrs- und Reiserechts verfügt, sind Sie bei uns richtig.
+      </p>
+      <a href="/kanzlei/" class="mt-6 inline-block font-semibold text-brand-dark hover:text-brand-darker">Mehr über die Kanzlei →</a>
+    </div>
+  </section>
+
+  <section class="border-y border-line bg-paper">
+    <div class="container-page py-16 md:py-20">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <h2 class="text-3xl font-bold tracking-tight">Rechtsanwälte</h2>
+        <a href="/rechtsanwaelte/" class="font-semibold text-brand-dark hover:text-brand-darker">Alle Profile →</a>
+      </div>
+      <div class="mt-8 grid gap-4 md:grid-cols-3">
+        {anwaelte.map((entry) => <LawyerCard entry={entry} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="container-page py-16 md:py-24">
+    <div class="grid gap-10 lg:grid-cols-[1fr_1.6fr]">
+      <div>
+        <h2 class="text-3xl font-bold tracking-tight">Fachanwältin für Familienrecht</h2>
+        <p class="mt-4 text-lg text-ink-soft">
+          Petra von Schumann ist Fachanwältin für Familienrecht.
+        </p>
+        <a href="/rechtsgebiete/" class="mt-6 inline-block font-semibold text-brand-dark hover:text-brand-darker">Alle Rechtsgebiete →</a>
+      </div>
+      <div class="grid gap-3 sm:grid-cols-2">
+        {
+          familyTopics.map((t) => (
+            <a
+              href={`/${t.data.slug}/`}
+              class="group flex items-center justify-between rounded border border-line px-5 py-4 font-semibold transition-colors hover:border-brand hover:bg-brand-tint"
+            >
+              {t.data.title}
+              <span class="text-brand-dark transition-transform group-hover:translate-x-1" aria-hidden="true">→</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="container-page">
+    <div class="grid gap-8 rounded bg-brand-tint p-8 md:grid-cols-[1fr_auto] md:items-center md:p-12">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight md:text-3xl">Sprechen Sie uns an</h2>
+        <p class="mt-2 text-ink-soft">{SITE.street}, {SITE.city}</p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <a href={SITE.phone.href} class="rounded bg-brand-dark px-6 py-3 font-semibold text-white hover:bg-brand-darker">{SITE.phone.label}</a>
+        <a href={`mailto:${SITE.email}`} class="rounded border border-brand-dark px-6 py-3 font-semibold text-brand-dark hover:bg-white">E-Mail schreiben</a>
+      </div>
+    </div>
+  </section>
+</Base>

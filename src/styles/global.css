@@ -1,0 +1,73 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+/*
+ * Flat, quiet palette. The green is the § mark from the old logo (#9DC115); it
+ * is too light for text on white, so text and buttons use the deeper shade.
+ * No web fonts: the system stack keeps the site free of third-party requests.
+ */
+@theme {
+  --color-brand: #9dc115;
+  --color-brand-dark: #4d6a0d;
+  --color-brand-darker: #3b520a;
+  --color-brand-tint: #f3f8e4;
+
+  --color-ink: #1d2530;
+  --color-ink-soft: #4a5361;
+  --color-ink-mute: #6b7380;
+  --color-line: #e2e5e0;
+  --color-paper: #f6f7f4;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+  }
+  ::selection {
+    background: var(--color-brand);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-brand-dark);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@utility container-page {
+  @apply mx-auto w-full max-w-6xl px-5 md:px-8;
+}
+
+@utility prose-spz {
+  @apply prose prose-lg max-w-none;
+  --tw-prose-body: var(--color-ink-soft);
+  --tw-prose-headings: var(--color-ink);
+  --tw-prose-links: var(--color-brand-dark);
+  --tw-prose-bold: var(--color-ink);
+  --tw-prose-bullets: var(--color-brand);
+  --tw-prose-counters: var(--color-brand-dark);
+  --tw-prose-hr: var(--color-line);
+
+  & :where(h2) {
+    @apply mt-12 mb-4 text-2xl font-semibold tracking-tight;
+  }
+  & :where(h3) {
+    @apply -mt-2 mb-3 text-base font-semibold tracking-normal text-ink-mute uppercase;
+  }
+  & :where(a) {
+    @apply font-medium underline decoration-brand decoration-2 underline-offset-4 transition-colors hover:text-brand-darker;
+  }
+  & :where(a strong) {
+    color: inherit;
+  }
+}

@@ -1,0 +1,85 @@
+---
+import Mark from './Mark.astro';
+import { NAV, SITE } from '../data/site';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const path = Astro.url.pathname.slice(base.length) || '/';
+const isActive = (href: string) => path.startsWith(href);
+---
+
+<header class="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
+  <div class="container-page flex h-18 items-center gap-6">
+    <a href="/" class="flex items-center gap-3" aria-label={`${SITE.name}, zur Startseite`}>
+      <Mark class="h-10 w-10 shrink-0" />
+      <span class="leading-tight">
+        <span class="block text-lg font-bold tracking-tight">{SITE.name}</span>
+        <span class="hidden text-xs text-ink-mute sm:block">{SITE.tagline}</span>
+      </span>
+    </a>
+
+    <nav class="ml-auto hidden items-center gap-1 md:flex" aria-label="Hauptnavigation">
+      {
+        NAV.map((item) => (
+          <a
+            href={item.href}
+            aria-current={isActive(item.href) ? 'page' : undefined}
+            class:list={[
+              'rounded px-3 py-2 text-[0.95rem] font-medium transition-colors',
+              isActive(item.href) ? 'bg-brand-tint text-brand-darker' : 'text-ink-soft hover:bg-paper hover:text-ink',
+            ]}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+      <a
+        href={SITE.phone.href}
+        class="ml-3 inline-flex items-center gap-2 rounded bg-brand-dark px-4 py-2 text-[0.95rem] font-semibold text-white transition-colors hover:bg-brand-darker"
+      >
+        <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path
+            d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        {SITE.phone.label}
+      </a>
+    </nav>
+
+    <!-- Mobile: a details/summary disclosure, so the menu needs no JavaScript. -->
+    <details class="group ml-auto md:hidden">
+      <summary
+        class="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded border border-line text-ink [&::-webkit-details-marker]:hidden"
+        aria-label="Menü"
+      >
+        <svg viewBox="0 0 24 24" class="h-5 w-5 group-open:hidden" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"></path>
+        </svg>
+        <svg viewBox="0 0 24 24" class="hidden h-5 w-5 group-open:block" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="m6 6 12 12M18 6 6 18" stroke-linecap="round"></path>
+        </svg>
+      </summary>
+      <nav class="absolute inset-x-0 top-full border-b border-line bg-white shadow-lg" aria-label="Hauptnavigation">
+        <div class="container-page flex flex-col py-2">
+          {
+            NAV.map((item) => (
+              <a
+                href={item.href}
+                aria-current={isActive(item.href) ? 'page' : undefined}
+                class:list={[
+                  'border-b border-line py-3 text-base font-medium last:border-0',
+                  isActive(item.href) ? 'text-brand-dark' : 'text-ink',
+                ]}
+              >
+                {item.label}
+              </a>
+            ))
+          }
+          <a href={SITE.phone.href} class="my-3 rounded bg-brand-dark px-4 py-3 text-center font-semibold text-white">
+            Anrufen: {SITE.phone.label}
+          </a>
+        </div>
+      </nav>
+    </details>
+  </div>
+</header>

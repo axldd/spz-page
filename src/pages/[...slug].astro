@@ -1,0 +1,99 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHeader from '../components/PageHeader.astro';
+import ContactBox from '../components/ContactBox.astro';
+
+/** Every markdown page in src/content/seiten, at its `slug`. */
+export const getStaticPaths = (async () => {
+  const seiten = await getCollection('seiten');
+  return seiten.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry, all: seiten } }));
+}) satisfies GetStaticPaths;
+
+const { entry, all } = Astro.props;
+const { Content } = await render(entry);
+const { slug, title, heading, description } = entry.data;
+
+const isArea = slug.startsWith('rechtsgebiete/');
+const isLegal = slug === 'impressum' || slug === 'datenschutz';
+const href = (s: string) => `/${s}/`;
+const bySlug = (s: string) => all.find((e) => e.data.slug === s);
+
+// Breadcrumbs from the slug path, labelled by the pages' short titles.
+const crumbs: { href: string; label: string }[] = [];
+if (isArea) {
+  crumbs.push({ href: '/rechtsgebiete/', label: 'Rechtsgebiete' });
+  const parts = slug.split('/');
+  for (let i = 2; i < parts.length; i++) {
+    const s = parts.slice(0, i).join('/');
+    const e = bySlug(s);
+    if (e) crumbs.push({ href: href(s), label: e.data.title });
+  }
+}
+
+// Familienrecht: list its topics; a topic page: show its siblings.
+const familyTopics = all
+  .filter((e) => e.data.parent === 'familienrecht')
+  .sort((a, b) => a.data.order - b.data.order);
+const showTopics = slug === 'rechtsgebiete/familienrecht' || entry.data.parent === 'familienrecht';
+---
+
+<Base title={title} description={description}>
+  <PageHeader title={heading ?? title} crumbs={crumbs} />
+
+  <div class="container-page mt-12 grid gap-12 md:mt-16 lg:grid-cols-[minmax(0,1fr)_20rem]">
+    <article class:list={['prose-spz', isLegal && 'prose-base! max-w-3xl!']}>
+      <Content />
+
+      {
+        slug === 'rechtsgebiete/familienrecht' && (
+          <div class="not-prose mt-10 grid gap-3 sm:grid-cols-2">
+            {familyTopics.map((t) => (
+              <a
+                href={href(t.data.slug)}
+                class="group flex items-center justify-between rounded border border-line px-5 py-4 font-semibold transition-colors hover:border-brand hover:bg-brand-tint"
+              >
+                {t.data.title}
+                <span class="text-brand-dark transition-transform group-hover:translate-x-1" aria-hidden="true">→</span>
+              </a>
+            ))}
+          </div>
+        )
+      }
+    </article>
+
+    {
+      !isLegal && (
+        <div class="space-y-8 lg:sticky lg:top-28 lg:self-start">
+          {showTopics && slug !== 'rechtsgebiete/familienrecht' && (
+            <nav aria-label="Familienrecht" class="rounded border border-line p-6">
+              <a href="/rechtsgebiete/familienrecht/" class="text-lg font-semibold hover:text-brand-dark">
+                Familienrecht
+              </a>
+              <ul class="mt-4 space-y-1">
+                {familyTopics.map((t) => (
+                  <li>
+                    <a
+                      href={href(t.data.slug)}
+                      aria-current={t.data.slug === slug ? 'page' : undefined}
+                      class:list={[
+                        'block rounded px-3 py-1.5 text-[0.95rem]',
+                        t.data.slug === slug
+                          ? 'bg-brand-tint font-semibold text-brand-darker'
+                          : 'text-ink-soft hover:bg-paper hover:text-ink',
+                      ]}
+                    >
+                      {t.data.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
+          <ContactBox />
+        </div>
+      )
+    }
+  </div>
+</Base>

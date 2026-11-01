@@ -1,0 +1,39 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import ContactBox from '../../components/ContactBox.astro';
+
+export const getStaticPaths = (async () => {
+  const anwaelte = await getCollection('anwaelte');
+  return anwaelte.map((entry) => ({ params: { slug: entry.data.slug }, props: { entry } }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { name, role, photo } = entry.data;
+---
+
+<Base title={name} description={`${name} – ${role}`}>
+  <PageHeader title={name} crumbs={[{ href: '/rechtsanwaelte/', label: 'Rechtsanwälte' }]} lead={role} />
+
+  <div class="container-page mt-12 grid gap-12 md:mt-16 lg:grid-cols-[minmax(0,1fr)_20rem]">
+    <div class="grid gap-10 md:grid-cols-[10rem_minmax(0,1fr)]">
+      <Image
+        src={photo}
+        alt={`Porträt ${name}`}
+        width={160}
+        densities={[1]}
+        class="w-40 self-start rounded"
+      />
+      <article class="prose-spz prose-base! [&_h2:first-child]:mt-0">
+        <Content />
+      </article>
+    </div>
+    <div class="lg:sticky lg:top-28 lg:self-start">
+      <ContactBox />
+    </div>
+  </div>
+</Base>

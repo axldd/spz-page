@@ -1,0 +1,35 @@
+---
+/** Title band for every sub page: breadcrumbs + heading. */
+interface Props {
+  title: string;
+  crumbs?: { href: string; label: string }[];
+  lead?: string;
+}
+const { title, crumbs = [], lead } = Astro.props;
+---
+
+<div class="border-b border-line bg-paper">
+  <div class="container-page py-10 md:py-14">
+    <nav aria-label="Brotkrümelnavigation" class="text-sm text-ink-mute">
+      <ol class="flex flex-wrap items-center gap-x-2 gap-y-1">
+        <li><a href="/" class="hover:text-brand-dark">Startseite</a></li>
+        {
+          crumbs.map((c) => (
+            <>
+              <li aria-hidden="true" class="text-line">/</li>
+              <li>
+                <a href={c.href} class="hover:text-brand-dark">{c.label}</a>
+              </li>
+            </>
+          ))
+        }
+      </ol>
+    </nav>
+    <h1 class="mt-4 max-w-4xl text-3xl leading-tight font-bold tracking-tight text-balance md:text-[2.6rem]">
+      <span class="mb-4 block h-1 w-12 bg-brand" aria-hidden="true"></span>
+      {title}
+    </h1>
+    {lead && <p class="mt-4 max-w-3xl text-lg text-ink-soft">{lead}</p>}
+    <slot />
+  </div>
+</div>

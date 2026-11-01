@@ -1,0 +1,15 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import LawyerCard from '../../components/LawyerCard.astro';
+
+const anwaelte = (await getCollection('anwaelte')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Base title="Rechtsanwälte">
+  <PageHeader title="Rechtsanwälte" />
+  <div class="container-page mt-12 grid gap-4 md:mt-16 md:grid-cols-2 lg:grid-cols-3">
+    {anwaelte.map((entry) => <LawyerCard entry={entry} />)}
+  </div>
+</Base>

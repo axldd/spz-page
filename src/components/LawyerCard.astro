@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  entry: CollectionEntry<'anwaelte'>;
+}
+const { entry } = Astro.props;
+const { name, role, photo, slug } = entry.data;
+---
+
+<a
+  href={`/rechtsanwaelte/${slug}/`}
+  class="group flex items-center gap-5 rounded border border-line bg-white p-5 transition-colors hover:border-brand"
+>
+  <Image src={photo} alt={`Porträt ${name}`} width={112} height={112} densities={[1]} class="h-28 w-28 shrink-0 rounded object-cover object-top" />
+  <span>
+    <span class="block text-lg font-semibold group-hover:text-brand-dark">{name}</span>
+    <span class="mt-1 block text-[0.95rem] text-ink-soft">{role}</span>
+    <span class="mt-3 block text-sm font-semibold text-brand-dark">Profil ansehen →</span>
+  </span>
+</a>
