@@ -11,4 +11,4 @@ Im Asylverfahren liegt der Schwerpunkt im Bereich der Zuerkennung der Flüchtlin
 
 Frau Rechtsanwältin Petra von Schumann führt in diesem Zusammenhang eine Vielzahl von verwaltungsgerichtlichen Verfahren, insbesondere vor den Verwaltungsgerichten in Wiesbaden und Gießen sowie dem Verwaltungsgerichtshof in Kassel, aber auch vor dem Europäischen Gerichtshof (EuGH) in Luxemburg.
 
-Im Ausländerrecht arbeitet und berät Frau Rechtsanwältin Petra von Schumann bundesweit, insbesondere vor dem Verwaltungsgericht in Berlin-Brandenburg, wenn ein Visum zur Familienzusammenführung oder ein Besuchsvisum von einer deutschen Botschaft irgendwo in der Welt abgelehnt wurde.
+Im Ausländerrecht arbeitet und berät Frau Rechtsanwältin Petra von Schumann bundesweit, insbesondere vor dem Verwaltungsgericht Berlin, wenn ein Visum zur Familienzusammenführung oder ein Besuchsvisum von einer deutschen Botschaft irgendwo in der Welt abgelehnt wurde.

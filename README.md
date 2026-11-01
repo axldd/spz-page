@@ -100,6 +100,9 @@ Fachanwaltsbezeichnung should be stated explicitly.
   ("Grundsicherung für Arbeitsuchende", "Bescheide des Jobcenters"), so it survives
   the next renaming of the benefit. Please confirm the wording, and whether the
   sentence about "statistische Untersuchungen" should stay.
-- Asyl- und Ausländerrecht mentions the "Verwaltungsgericht in Berlin-Brandenburg"
-  (the court is VG Berlin; Berlin-Brandenburg is the OVG). Please check.
+- Asyl- und Ausländerrecht: "Verwaltungsgericht in Berlin-Brandenburg" was corrected
+  to "Verwaltungsgericht Berlin" (visa refusals by German embassies are heard
+  there; Berlin-Brandenburg is the OVG, the appeal court). If the firm also wants
+  to mention appeals: "… vor dem Verwaltungsgericht Berlin und dem
+  Oberverwaltungsgericht Berlin-Brandenburg".
 - Portrait photos are only 150–170 px wide; better originals would help.
