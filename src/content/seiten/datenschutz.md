@@ -9,7 +9,6 @@ draft: true
   Beschreibt die Website so, wie sie ist: statisch, gehostet auf GitHub Pages,
   keine Cookies, kein Tracking, keine externen Schriften/Karten/Formulare.
   Wenn sich daran etwas ändert, diesen Text im selben Schritt anpassen.
-  Prüfpunkte: siehe README.md, Abschnitt "Datenschutzerklärung".
   Nach Freigabe: `draft: true` oben entfernen (blendet den Entwurfshinweis aus).
 -->
 
