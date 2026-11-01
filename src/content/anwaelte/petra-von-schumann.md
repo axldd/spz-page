@@ -24,7 +24,7 @@ wpId: 27
     -   **[Ehevertrag](/rechtsgebiete/familienrecht/ehevertrag/)**
     -   **[Erbrecht](/rechtsgebiete/familienrecht/erbrecht/)**
 -   **[Asyl- und Ausländerrecht](/rechtsgebiete/asyl-und-auslaenderrecht/)**
--   [**Sozialrecht**](/rechtsgebiete/sozialrecht/) (Hartz-IV-Bescheide)
+-   [**Sozialrecht**](/rechtsgebiete/sozialrecht/) (Bescheide des Jobcenters)
 
 ## Interessenschwerpunkte:
 

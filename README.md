@@ -96,7 +96,10 @@ Fachanwaltsbezeichnung should be stated explicitly.
 ### Other content
 
 - Typos were corrected throughout (November 2026); see git history for the exact changes.
-- Sozialrecht still talks about "Hartz IV" / "Arbeitslosengeld II" (now Bürgergeld).
+- Sozialrecht: "Hartz IV" / "Arbeitslosengeld II" was replaced with neutral wording
+  ("Grundsicherung für Arbeitsuchende", "Bescheide des Jobcenters"), so it survives
+  the next renaming of the benefit. Please confirm the wording, and whether the
+  sentence about "statistische Untersuchungen" should stay.
 - Asyl- und Ausländerrecht mentions the "Verwaltungsgericht in Berlin-Brandenburg"
   (the court is VG Berlin; Berlin-Brandenburg is the OVG). Please check.
 - Portrait photos are only 150–170 px wide; better originals would help.
