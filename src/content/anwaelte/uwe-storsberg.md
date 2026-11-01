@@ -9,12 +9,12 @@ wpId: 18
 
 ## Profil:
 
--   Studium der Rechtswissenschaften in Heidelberg und Frankfurt/a.M.
+-   Studium der Rechtswissenschaften in Heidelberg und Frankfurt a. M.
 -   Zulassung als Rechtsanwalt seit 1993
 
 ## Tätigkeitsschwerpunkte:
 
--   Straßenverkehrsrecht(Verkehrszivilrecht, Verkehrsstrafrecht, Verkehrsordnungswidrigkeitenrecht, Verkehrsverwaltungsrecht)
+-   Straßenverkehrsrecht (Verkehrszivilrecht, Verkehrsstrafrecht, Verkehrsordnungswidrigkeitenrecht, Verkehrsverwaltungsrecht)
 -   Familienrecht
 -   Erbrecht
 
@@ -29,7 +29,7 @@ wpId: 18
 
 ## Mitgliedschaften:
 
--   Rechtsanwaltskammer Frankfurt/a.M.
+-   Rechtsanwaltskammer Frankfurt a. M.
 -   Deutscher Anwaltsverein DAV
 -   Anwaltsverein Darmstadt und Südhessen
 -   ARGE Verkehrsrecht im Deutschen Anwaltsverein

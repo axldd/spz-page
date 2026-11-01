@@ -9,7 +9,7 @@ wpId: 27
 
 ## Profil:
 
--   Studium der Rechtswissenschaft in Mainz, Münster und Frankfurt/a.M.
+-   Studium der Rechtswissenschaft in Mainz, Münster und Frankfurt a. M.
 -   Zulassung als Rechtsanwältin seit 1993
 -   Zulassung als Fachanwältin für Familienrecht seit Februar 2012
 
@@ -24,7 +24,7 @@ wpId: 27
     -   **[Ehevertrag](/rechtsgebiete/familienrecht/ehevertrag/)**
     -   **[Erbrecht](/rechtsgebiete/familienrecht/erbrecht/)**
 -   **[Asyl- und Ausländerrecht](/rechtsgebiete/asyl-und-auslaenderrecht/)**
--   [**Sozialrecht**](/rechtsgebiete/sozialrecht/) (Hartz IV -Bescheide)
+-   [**Sozialrecht**](/rechtsgebiete/sozialrecht/) (Hartz-IV-Bescheide)
 
 ## Interessenschwerpunkte:
 
@@ -34,6 +34,6 @@ wpId: 27
 
 ## Mitgliedschaften:
 
--   Rechtsanwaltskammer Frankfurt/a.M.
+-   Rechtsanwaltskammer Frankfurt a. M.
 -   Arbeitskreis Ausländer- und Asylrecht
 -   Frauenzentrum Rüsselsheim e.V.

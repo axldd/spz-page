@@ -44,6 +44,13 @@ const showTopics = slug === 'rechtsgebiete/familienrecht' || entry.data.parent =
 
   <div class="container-page mt-12 grid gap-12 md:mt-16 lg:grid-cols-[minmax(0,1fr)_20rem]">
     <article class:list={['prose-spz', isLegal && 'prose-base! max-w-3xl!']}>
+      {
+        entry.data.draft && (
+          <p class="not-prose mb-8 rounded border border-amber-300 bg-amber-50 px-5 py-4 text-[0.95rem] text-amber-900">
+            <strong>Entwurf</strong> – dieser Text ist noch nicht von der Kanzlei freigegeben.
+          </p>
+        )
+      }
       <Content />
 
       {

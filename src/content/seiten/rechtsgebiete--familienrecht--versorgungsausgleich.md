@@ -11,7 +11,7 @@ Mit der Scheidung gehen allerlei Fragen einher. Unter anderem, was genau ein Ver
 
 ## Versorgungsausgleich
 
-Bei einem Versorgungsausgleich werden die Rentenansprüche der Eheleute, die während der Ehe erworben wurden untereinander ausgeglichen, soweit dies erforderlich ist. Hierzu gehören auch private Rentenverträge, wie Reesterrente usw. Ob einzelne Rendite vom Versorgungsausgleich auszunehmen sind oder andersweitig (z.B. im Rahmen der Vermögensaufteilung) auszugleichen sind, bedarf der Einzelfallprüfung. Dieser Vorgang wird automatisch durch das Gericht geprüft. Bei einer Ehe, die kürzer als drei Jahre andauerte, geschieht der Versorgungsausgleich nicht automatisch. Er kann allerdings von Ihrer Fachanwältin für Familienrecht beantragt werden, wenn dies gewünscht ist.
+Bei einem Versorgungsausgleich werden die Rentenansprüche der Eheleute, die während der Ehe erworben wurden, untereinander ausgeglichen, soweit dies erforderlich ist. Hierzu gehören auch private Rentenverträge, wie Riester-Rente usw. Ob einzelne Renten vom Versorgungsausgleich auszunehmen sind oder anderweitig (z.B. im Rahmen der Vermögensaufteilung) auszugleichen sind, bedarf der Einzelfallprüfung. Dieser Vorgang wird automatisch durch das Gericht geprüft. Bei einer Ehe, die kürzer als drei Jahre andauerte, geschieht der Versorgungsausgleich nicht automatisch. Er kann allerdings von Ihrer Fachanwältin für Familienrecht beantragt werden, wenn dies gewünscht ist.
 
 Frau Rechtsanwältin von Schumann berät Sie gerne.
 

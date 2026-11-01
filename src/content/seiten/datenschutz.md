@@ -1,65 +1,91 @@
 ---
 slug: "datenschutz"
 title: "Datenschutzerklärung"
-wpId: 3
+draft: true
 ---
 
-Stand Mai 2018
+<!--
+  ENTWURF (November 2026), von der Kanzlei vor dem Go-live zu prüfen.
+  Beschreibt die Website so, wie sie ist: statisch, gehostet auf GitHub Pages,
+  keine Cookies, kein Tracking, keine externen Schriften/Karten/Formulare.
+  Wenn sich daran etwas ändert, diesen Text im selben Schritt anpassen.
+  Prüfpunkte: siehe README.md, Abschnitt "Datenschutzerklärung".
+  Nach Freigabe: `draft: true` oben entfernen (blendet den Entwurfshinweis aus).
+-->
 
-Eigentümer und Betreiber der Website ist Rechtsanwalt Uwe Storsberg und Rechtsanwältin Petra von Schuman
+Wir freuen uns über Ihr Interesse an unserer Kanzlei. Der Schutz Ihrer personenbezogenen Daten ist uns, auch aufgrund unserer beruflichen Verschwiegenheitspflicht, ein besonderes Anliegen. Nachfolgend informieren wir Sie gemäß Art. 13 der Datenschutz-Grundverordnung (DSGVO) darüber, welche Daten beim Besuch dieser Website verarbeitet werden.
 
-## 1. Diese Datenschutz-Information gilt für die Datenverarbeitungdurch:
+## 1. Verantwortlicher
 
-Verantwortlicher:  Rechtsanwälte Storsberg und von Schumann, Haßlocher Str. 150, 65428 Rüsselsheim\
-E-Mail: kanzlei@spz-anwaelte.de\
-Telefon: +49 (0)6142 563536Fax: +49 (0)6142 571342
+Rechtsanwälte Storsberg und von Schumann GbR\
+vertreten durch Rechtsanwalt Uwe Storsberg und Rechtsanwältin Petra von Schumann\
+Haßlocher Str. 150\
+65428 Rüsselsheim
 
-## 2. Erhebung und Speicherung personenbezogenen Daten sowie Art und Zweck von deren Verwendung:
+Telefon: 06142 563536\
+Fax: 06142 57134\
+E-Mail: kanzlei@spz-anwaelte.de
 
-Beim Aufrufen unserer Webseite www.spz-anwaelte.de werden durch den auf Ihrem Endgerät zum Einsatz kommenden Browser automatisch Informationen an den Server unserer Webseite gesendet. Diese Informationen werden temporär in einem sog. Logfile gespeichert. Folgende Informationen werden dabei ohne Ihr Zutun erfasst und bis zur automatisierten Löschung gespeichert:
+Ein Datenschutzbeauftragter ist für unsere Kanzlei gesetzlich nicht vorgeschrieben und daher nicht benannt. Bei Fragen zum Datenschutz wenden Sie sich bitte direkt an die oben genannte Adresse.
 
-- IP-Adresse des anfragenden Rechners,
+## 2. Grundsätzliches zu dieser Website
+
+Diese Website ist ein reines Informationsangebot. Sie verwendet **keine Cookies**, **keine Analyse- oder Tracking-Werkzeuge**, bindet **keine Inhalte von Drittanbietern** ein (etwa Schriftarten, Karten, Videos oder Social-Media-Plugins) und enthält **keine Kontakt- oder Eingabeformulare**. Die Seiten werden vollständig vom unten genannten Hosting-Anbieter ausgeliefert.
+
+## 3. Hosting und Server-Logdateien
+
+Diese Website wird über den Dienst „GitHub Pages“ der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA (im Folgenden „GitHub“) bereitgestellt.
+
+Beim Aufruf der Website übermittelt Ihr Browser technisch bedingt Daten an die Server von GitHub. Dabei werden insbesondere folgende Informationen verarbeitet und von GitHub zur Gewährleistung der Sicherheit und Stabilität des Dienstes vorübergehend in Logdateien gespeichert:
+
+- IP-Adresse des anfragenden Endgeräts,
 - Datum und Uhrzeit des Zugriffs,
-- Name und URL der abgerufenen Datei,
+- Name und URL der abgerufenen Seite bzw. Datei,
 - Website, von der aus der Zugriff erfolgt (Referrer-URL),
-- verwendeter Browser und ggf. das Betriebssystem Ihres Rechners sowie der Name Ihres Access-Providers. Die genannten Daten werden durch uns zu folgenden Zwecken verarbeitet:
-- Gewährleistung eines reibungslosen Verbindungsaufbausder Website,
-- Gewährleistung einer komfortablen Nutzung unsererWebsite,
-- Auswertung der Systemsicherheit und -stabilität sowie
-- zu weiteren administrativen Zwecken.
+- verwendeter Browser und ggf. das Betriebssystem.
 
-Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 S. 1 lit. f DSGVO. Unser berechtigtes Interesse folgt aus oben aufgelisteten Zwecken zur Datenerhebung. In keinem Fall verwenden wir die erhobenen Daten zu dem Zweck, Rückschlüsse auf Ihre Person zu ziehen. Darüber hinaus setzen wir beim Besuch unserer Webseite Cookies sowie Analysedienste ein. Nähere Erläuterungendazu erhalten Sie unter den Ziff. 4 und 5 dieser Datenschutzerklärung.
+Wir selbst haben keinen Zugriff auf diese Logdateien und führen sie nicht mit anderen Daten zusammen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in der sicheren, zuverlässigen und kostengünstigen Bereitstellung unserer Website.
 
-## 3. Weitergabe von Daten:
+GitHub hat seinen Sitz in den USA. Für die USA besteht ein Angemessenheitsbeschluss der EU-Kommission (EU-US Data Privacy Framework, Art. 45 DSGVO), unter dem GitHub zertifiziert ist. Weitere Informationen finden Sie in der Datenschutzerklärung von GitHub: [docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement).
 
-Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als den im Folgenden aufgeführten Zwecken findet nicht statt. Wir geben Ihre persönlichen Daten nur an Dritte weiter, wenn:
+## 4. Kontaktaufnahme per E-Mail oder Telefon
 
-- Sie Ihre nach Art. 6 Abs. 1 S. 1 lit. a DSGVO ausdrückliche Einwilligung dazu erteilt haben,
-- die Weitergabe nach Art. 6 Abs. 1 S. 1 lit. f DSGVO zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist und kein Grund zur Annahme besteht, dass Sie ein überwiegendes schutzwürdiges Interesse an der Nichtweitergabe Ihrer Daten haben,
-- für den Fall, dass für die Weitergabe nach Art. 6 Abs. 1 S. 1lit. c DSGVO eine gesetzliche Verpflichtung besteht, sowie
-- dies gesetzlich zulässig und nach Art. 6 Abs. 1 S. 1 lit. bDSGVO für die Abwicklung von Vertragsverhältnissen mit Ihnen erforderlich ist.
+Wenn Sie uns per E-Mail, Telefon oder Fax kontaktieren, verarbeiten wir die von Ihnen mitgeteilten Daten (z. B. Name, Kontaktdaten, Ihr Anliegen), um Ihre Anfrage zu bearbeiten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, soweit Ihre Anfrage auf die Anbahnung oder Durchführung eines Mandats gerichtet ist, im Übrigen Art. 6 Abs. 1 lit. f DSGVO (unser berechtigtes Interesse an der Beantwortung Ihrer Anfrage).
 
-## 4. Betroffenenrechte:
+Alle Informationen, die Sie uns anvertrauen, unterliegen der anwaltlichen Verschwiegenheitspflicht (§ 43a Abs. 2 BRAO). Wir speichern Ihre Daten, solange dies für die Bearbeitung Ihres Anliegens erforderlich ist. Kommt ein Mandat zustande, gelten die berufsrechtlichen Aufbewahrungsfristen (insbesondere § 50 BRAO) sowie die handels- und steuerrechtlichen Aufbewahrungsfristen.
 
-Sie haben das Recht:
+Bitte beachten Sie: Unverschlüsselte E-Mails können auf dem Übertragungsweg grundsätzlich von Dritten eingesehen werden. Für vertrauliche Inhalte empfehlen wir daher die Kontaktaufnahme per Telefon oder Post.
 
-- gemäß Art. 15 DSGVO Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten zu verlangen. Insbesondere können Sie Auskunft über die Verarbeitungszwecke, die Kategorie der personenbezogenen Daten, die Kategorien von Empfängern, gegenüber denen Ihre Daten offengelegt wurdenoder werden, die geplante Speicherdauer, das Bestehen eines Rechts auf Berichtigung, Löschung, Einschränkung der Verarbeitung oder Widerspruch, das Bestehen eines Beschwerderechts, die Herkunft ihrer Daten, sofern diese nicht bei uns erhoben wurden, sowie über das Bestehen einer automatisiertenEntscheidungsfindung einschließlich Profiling und ggf. aussagekräftigen Informationen zu deren Einzelheiten verlangen;
-- gemäß Art. 16 DSGVO unverzüglich die Berichtigung unrichtiger oder Vervollständigung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen;
-- gemäß Art. 17 DSGVO die Löschung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen, soweit nicht die Verarbeitung zur Ausübung des Rechts auf freie Meinungsäußerung und Information, zur Erfüllung einer rechtlichen Verpflichtung, aus Gründen des öffentlichen Interesses oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist;
-- gemäß Art. 18 DSGVO die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen, soweitdie Richtigkeit der Daten von Ihnen bestritten wird
-- gemäß Art. 18 DSGVO die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen, soweit die Richtigkeit der Daten von Ihnen bestritten wird, die Verarbeitung unrechtmäßig ist, Sie aber deren Löschung ablehnen und wir die Daten nicht mehr benötigen, Sie jedoch diesezur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen benötigen oder Sie gemäß Art. 21 DSGVO Widerspruch gegen die Verarbeitung eingelegt haben;
-- gemäß Art. 20 DSGVO Ihre personenbezogenen Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesebaren Format zu erhalten oder die Übermittlung an einen anderen Verantwortlichen zu verlangen;
-- gemäß Art. 7 Abs. 3 DSGVO Ihre einmal erteilte Einwilligung jederzeit gegenüber uns zu widerrufen. Dies hat zur Folge, dass wir die Datenverarbeitung, die auf dieser Einwilligung beruhte, für die Zukunft nicht mehr fortführen dürfen und
-- gemäß Art. 77 DSGVO sich bei einer Aufsichtsbehörde zubeschweren. In der Regel können Sie sich hierfür an die Aufsichtsbehörde Ihres üblichen Aufenthaltsortes oder Arbeitsplatzes oder unseres Kanzleisitzes wenden.
+## 5. Links zu anderen Websites
 
-## 5. Widerspruchsrecht
+Diese Website enthält Links zu externen Angeboten, z. B. zu Google Maps (Anfahrt) oder zur Bundesrechtsanwaltskammer. Beim bloßen Aufruf unserer Seiten werden keine Daten an diese Anbieter übermittelt. Erst wenn Sie einen solchen Link anklicken, verlassen Sie unsere Website; für die Datenverarbeitung auf der verlinkten Seite ist dann allein deren Betreiber verantwortlich.
 
-Sofern Ihre personenbezogenen Daten auf Grundlage von berechtigten Interessen gemäß Art. 6 Abs. 1 S. 1 lit. f DSGVO verarbeitet werden, haben Sie das Recht, gemäß Art. 21DSGVO Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten einzulegen, soweit dafür Gründe vorliegen, die sich aus Ihrer besonderen Situation ergeben oder sich der Widerspruch gegen Direktwerbung richtet. Im letzteren Fall haben Sie ein generelles Widerspruchsrecht, das ohne Angabe einer besonderen Situation von uns umgesetzt wird. Möchten Sie von Ihrem Widerrufs- oder Widerspruchs-recht Gebrauch machen, genügt eine E-Mail an kanzlei@spz-anwaelte.de
+## 6. Ihre Rechte
 
-## 6. Datensicherheit
+Sie haben uns gegenüber folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:
 
-Wir verwenden innerhalb des Website-Besuchs das verbreitete SSL-Verfahren (Secure Socket Layer) in Verbindung mitder jeweils höchsten Verschlüsselungsstufe, die von Ihrem Browser unterstützt wird. In der Regel handelt es sich dabei um eine 256 Bit Verschlüsselung. Falls Ihr Browser keine 256-Bit Verschlüsselung unterstützt, greifen wir stattdessenauf 128-Bit v3 Technologie zurück. Ob eine einzelne Seite unseres Internetauftrittes verschlüsselt übertragen wird, erkennen Sie an der geschlossenen Darstellung des Schüssel- beziehungsweise Schloss-Symbols in der unteren Statusleiste Ihres Browsers.Wir bedienen uns im Übrigen geeigneter technischer und organisatorischer Sicherheitsmaßnahmen, um Ihre Daten gegen zufällige oder vorsätzliche Manipulationen, teilweisenoder vollständigen Verlust, Zerstörung oder gegen den unbefugten Zugriff Dritter zu schützen. Unsere Sicherheitsmaß-nahmen werden entsprechend der technologischen Entwick-lung fortlaufend verbessert.
+- Recht auf Auskunft (Art. 15 DSGVO),
+- Recht auf Berichtigung (Art. 16 DSGVO),
+- Recht auf Löschung (Art. 17 DSGVO),
+- Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO),
+- Recht auf Datenübertragbarkeit (Art. 20 DSGVO),
+- Recht auf Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO).
 
-## 7. Aktualität und Änderung dieser Datenschutzerklärung
+Soweit die gesetzliche Verschwiegenheitspflicht oder Aufbewahrungspflichten entgegenstehen, können diese Rechte eingeschränkt sein.
 
-Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Mai 2018. Durch die Weiterentwicklung unserer Website und Angebote darüber oder aufgrund geänderter gesetzlicher beziehungsweise behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern. Die jeweilsaktuelle Datenschutzerklärung kann jederzeit auf der Websiteunter www.xyrechtsanwaelte.de/datenschutz von Ihnen abgerufen und ausgedruckt werden.
+**Widerspruchsrecht (Art. 21 DSGVO):** Soweit wir Ihre Daten auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO verarbeiten, können Sie aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit Widerspruch gegen die Verarbeitung einlegen. Eine formlose Mitteilung an kanzlei@spz-anwaelte.de genügt.
+
+**Beschwerderecht (Art. 77 DSGVO):** Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Für unsere Kanzlei zuständig ist:
+
+Der Hessische Beauftragte für Datenschutz und Informationsfreiheit\
+Gustav-Stresemann-Ring 1\
+65189 Wiesbaden\
+[datenschutz.hessen.de](https://datenschutz.hessen.de)
+
+## 7. Datensicherheit
+
+Die Übertragung dieser Website erfolgt verschlüsselt über HTTPS (TLS). Sie erkennen eine verschlüsselte Verbindung am Schloss-Symbol in der Adresszeile Ihres Browsers.
+
+## 8. Aktualität dieser Datenschutzerklärung
+
+Stand: November 2026. Wir passen diese Datenschutzerklärung an, sobald sich die Website oder die rechtlichen Vorgaben ändern. Die jeweils aktuelle Fassung finden Sie stets auf dieser Seite.

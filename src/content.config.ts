@@ -18,6 +18,8 @@ const seiten = defineCollection({
     /** Rechtsgebiete only: "familienrecht" groups the page under Familienrecht. */
     parent: z.string().optional(),
     order: z.number().default(99),
+    /** Shows a visible "Entwurf" notice until the text has been approved. */
+    draft: z.boolean().default(false),
     /** WordPress page ID (old URL ?page_id=N), used for the legacy redirects. */
     wpId: z.number().optional(),
   }),

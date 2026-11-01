@@ -23,5 +23,5 @@ wpId: 117
 
 ## Mitgliedschaften:
 
--   Rechtsanwaltskammer Frankfurt/a.M.
+-   Rechtsanwaltskammer Frankfurt a. M.
 -   Deutscher Anwaltsverein DAV

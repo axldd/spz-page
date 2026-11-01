@@ -7,7 +7,7 @@ order: 7
 wpId: 224
 ---
 
-Das Versterben eines Angehörigen bzw. einer Angehörigen ist emotional belastend und geht zudem mit viel organisatorischem Aufwand einher. Insbesondere das Testament und Erbe stellt die Hinterbliebenen oft vor eine große Herausforderung, da es nach geltendem Recht aufzuteilen ist. Hierbei unterstützen wir Sie gerne und stehen Ihnen zur Seite.
+Das Versterben eines Angehörigen bzw. einer Angehörigen ist emotional belastend und geht zudem mit viel organisatorischem Aufwand einher. Insbesondere Testament und Erbe stellen die Hinterbliebenen oft vor eine große Herausforderung, da das Erbe nach geltendem Recht aufzuteilen ist. Hierbei unterstützen wir Sie gerne und stehen Ihnen zur Seite.
 
 ## Erbrecht
 
@@ -15,7 +15,7 @@ Nach dem Ableben des Erblassers bzw. der Erblasserin wird dessen Vermögen an di
 
 ## Das Testament
 
-Ein Testament stellt eine Willenserklärung dar, die jederzeit widerrufen werden kann. Sie regelt den Erbfall nach Ihrem Ableben. Ob ein Testament verfasst wird, bleibt Ihnen überlassen. Soweit die gesetzliche Erbfolge Ihnen nicht zusagt, sollte ein Testament in Betracht gezogen werden. Das öffentliche Testament bedarf jedoch der notariellen Beurkundung. Wir helfen und beraten Sie gerne, ob ein Testament für Sie in Frage kommt und wie Sie Ihr Erbe nach Ihren Vorstellungen bestmöglich aufteilen können.
+Ein Testament stellt eine Willenserklärung dar, die jederzeit widerrufen werden kann. Es regelt den Erbfall nach Ihrem Ableben. Ob ein Testament verfasst wird, bleibt Ihnen überlassen. Soweit die gesetzliche Erbfolge Ihnen nicht zusagt, sollte ein Testament in Betracht gezogen werden. Das öffentliche Testament bedarf jedoch der notariellen Beurkundung. Wir helfen und beraten Sie gerne, ob ein Testament für Sie in Frage kommt und wie Sie Ihr Erbe nach Ihren Vorstellungen bestmöglich aufteilen können.
 
 ## Testament und Erbvertrag
 

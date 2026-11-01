@@ -65,16 +65,38 @@ To go live on www.spz-anwaelte.de:
 
 ## Before go-live: content the firm has to review
 
-- **Datenschutzerklärung** (`src/content/seiten/datenschutz.md`) is the old
-  text from 2018, unchanged. It no longer matches the site: it mentions cookies
-  and analytics (there are none), describes outdated SSL details, points to
-  `www.xyrechtsanwaelte.de/datenschutz`, and does not name GitHub Pages as the
-  host. It must be updated by the firm.
-- **Impressum**: please have it checked for completeness (e.g. the address of
-  the Berufshaftpflichtversicherung, the Berufsbezeichnung).
-- Typos carried over verbatim: "Gesellschafzt", "Petra vom Schumann"
-  (Familienrecht), "von Schuman" and fax "571342" (Datenschutz), "festfgesetzt",
-  "nzw.", "Eheparterin" (Unterhalt), "Reesterrente", "Rendite" (Versorgungsausgleich),
-  "zerüttet", "deutschland weit" (Scheidung), "Ausländerecht".
-- Sozialrecht still talks about "Hartz IV" (now Bürgergeld).
+### Datenschutzerklärung (`src/content/seiten/datenschutz.md`)
+
+This is a new **draft** (November 2026) written for the site as it actually is:
+hosted on GitHub Pages, no cookies, no tracking, no embedded third-party content,
+no forms. While `draft: true` is in its header, the page shows a yellow
+"Entwurf" notice. Remove that line once the firm has approved the text.
+
+Please check in particular:
+
+- **Legal name / representation:** "Rechtsanwälte Storsberg und von Schumann GbR,
+  vertreten durch …". Is that correct?
+- **No Datenschutzbeauftragter:** the draft states that none is required.
+- **GitHub / USA:** the draft relies on GitHub's certification under the
+  EU-US Data Privacy Framework. Verify that this is still current at launch.
+- **Aufsichtsbehörde:** Hessischer Beauftragter für Datenschutz und
+  Informationsfreiheit, Gustav-Stresemann-Ring 1, 65189 Wiesbaden. Verify the address.
+- **Retention:** the reference to § 50 BRAO and the advice on unencrypted e-mail.
+
+The old 2018 text is in git history (commit `72432b3`) if needed.
+
+### Impressum (`src/content/seiten/impressum.md`)
+
+Typos and layout were fixed and the content is unchanged. Please check it for
+completeness, e.g. the full address of the Berufshaftpflichtversicherung
+("10900 Berlin" only), and whether the Berufsbezeichnung ("Rechtsanwalt /
+Rechtsanwältin, verliehen in der Bundesrepublik Deutschland") and the
+Fachanwaltsbezeichnung should be stated explicitly.
+
+### Other content
+
+- Typos were corrected throughout (November 2026); see git history for the exact changes.
+- Sozialrecht still talks about "Hartz IV" / "Arbeitslosengeld II" (now Bürgergeld).
+- Asyl- und Ausländerrecht mentions the "Verwaltungsgericht in Berlin-Brandenburg"
+  (the court is VG Berlin; Berlin-Brandenburg is the OVG). Please check.
 - Portrait photos are only 150–170 px wide; better originals would help.
